@@ -1,5 +1,7 @@
 here i will put notes of anyting i find useful, or just worth taking in account, to myself o something
 
+i started this project with cloud9. that way i didnt have to configure too much anyting
+
 started the repo with this command, that way it creates a rails project just using the barely minimun for an api
 but with all the benefits rails provides by default.
 
