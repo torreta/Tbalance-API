@@ -21,3 +21,7 @@ https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
 - shoulda_matchers - Provides RSpec with additional matchers.
 - database_cleaner - You guessed it! It literally cleans our test database to ensure a clean state in each test suite.
 - faker - A library for generating fake data. We'll use this to generate test data.
+
+
+here is the repo where i found the most tips to continue with the test driven app
+ https://github.com/akabiru/todos-api
