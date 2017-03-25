@@ -11,3 +11,11 @@ but with all the benefits rails provides by default.
  got this tuto to "follow" as a kind of guide
  
 https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
+
+ comments on this gems that i first time i useful
+ 
+- rspec-rails - Testing framework.
+- factory_girl_rails - A fixtures replacement with a more straightforward syntax. You'll see.
+- shoulda_matchers - Provides RSpec with additional matchers.
+- database_cleaner - You guessed it! It literally cleans our test database to ensure a clean state in each test suite.
+- faker - A library for generating fake data. We'll use this to generate test data.
