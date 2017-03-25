@@ -15,6 +15,8 @@ https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
  comments on this gems that i first time i useful
  
 - rspec-rails - Testing framework.
+  `rails generate rspec:install` 
+
 - factory_girl_rails - A fixtures replacement with a more straightforward syntax. You'll see.
 - shoulda_matchers - Provides RSpec with additional matchers.
 - database_cleaner - You guessed it! It literally cleans our test database to ensure a clean state in each test suite.
