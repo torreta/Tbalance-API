@@ -25,3 +25,8 @@ https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
 
 here is the repo where i found the most tips to continue with the test driven app
  https://github.com/akabiru/todos-api
+ 
+ custom vagrant box.
+ https://railsbox.io/boxes/6ad8d711f442
+ 
+ 
