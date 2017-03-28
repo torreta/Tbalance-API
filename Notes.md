@@ -30,3 +30,17 @@ here is the repo where i found the most tips to continue with the test driven ap
  https://railsbox.io/boxes/6ad8d711f442
  
  
+ we are trying to adapt the tutorial, so we use 2 atributes for another thing
+ 
+ 
+Some ideas for future implementation. 
+
+currencies: name, value, simbol, date
+
+Bank: name, rif
+
+Task: name, created by 
+ 
+Suggestion: description:string created_by:string
+ 
+rails g model Todo title:string created_by:string
