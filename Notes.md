@@ -42,7 +42,14 @@ Bank: name, rif
 Task: name, created by 
  
 Suggestion: description:string created_by:string
- 
+
+
+paginas de ayuda y apis externas:
+https://www.venezuelaecon.com/
+https://github.com/btcven/api
+http://api.bitcoinvenezuela.com/DolarToday.php?json=yes
+
+
 
 some used:
 rails g model Todo title:string created_by:string
