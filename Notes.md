@@ -54,3 +54,10 @@ http://api.bitcoinvenezuela.com/DolarToday.php?json=yes
 some used:
 rails g model Todo title:string created_by:string
 rails g model Item name:string done:boolean todo:references
+
+
+to study or upgrade: (shoulda_matchers)
+
+http://matchers.shoulda.io
+https://github.com/thoughtbot/shoulda-matchers
+http://api.rubyonrails.org/classes/ActiveModel/Validations/HelperMethods.html
