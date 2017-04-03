@@ -61,3 +61,16 @@ to study or upgrade: (shoulda_matchers)
 http://matchers.shoulda.io
 https://github.com/thoughtbot/shoulda-matchers
 http://api.rubyonrails.org/classes/ActiveModel/Validations/HelperMethods.html
+
+
+some classes to make:
+
+eMarker: (economic marker.)
+date: date value: decimal desc: string type currency_id:integer references
+changeVSlast: decimal
+
+currency_value:
+currency_id: integer reference: currency currency_history_id 
+
+transaccion_ description currency_id: reference category_id: integer XtimesSalary_ decimal
+
