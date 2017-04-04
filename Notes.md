@@ -74,6 +74,7 @@ currencies:
  simbol:string 
  alias:string 
  history_id: integer reference: currency_value_id
+ formal?: boolean #eggs, milk or dolar / informal, formal.
 
 currency_value:
  currency_id: integer reference: currency 
@@ -84,4 +85,6 @@ currency_value:
 
 transaccion_ description currency_id: reference category_id: integer XtimesSalary_ decimal
 
-º
+
+
+soon, need to destroy the rspec, and make it work or wont progress at al...
