@@ -65,12 +65,23 @@ http://api.rubyonrails.org/classes/ActiveModel/Validations/HelperMethods.html
 
 some classes to make:
 
-eMarker: (economic marker.)
+eMarker: (economic marker.)(translada a currencies)
 date: date value: decimal desc: string type currency_id:integer references
 changeVSlast: decimal
 
+currencies:
+ name: string 
+ simbol:string 
+ alias:string 
+ history_id: integer reference: currency_value_id
+
 currency_value:
-currency_id: integer reference: currency currency_history_id 
+ currency_id: integer reference: currency 
+ sample_date: date 
+ valueVs: decimal 
+ VsCurrency_id: integer
+
 
 transaccion_ description currency_id: reference category_id: integer XtimesSalary_ decimal
 
+º
