@@ -1,4 +1,6 @@
 require 'rails_helper'
+require 'spec_helper'
+require 'rspec/rails'
 
 # Test suite for the Todo model
 RSpec.describe Todo, type: :model do
