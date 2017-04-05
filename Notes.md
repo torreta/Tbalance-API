@@ -88,3 +88,5 @@ transaccion_ description currency_id: reference category_id: integer XtimesSalar
 
 
 soon, need to destroy the rspec, and make it work or wont progress at al...
+
+could take the banks from the database at work.
