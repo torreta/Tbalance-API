@@ -57,3 +57,5 @@ describe Zombie do
 
     end
 end
+
+#  rspec spec/lib/zombie_spec.rb
