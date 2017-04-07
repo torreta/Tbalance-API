@@ -9,4 +9,3 @@ RSpec.describe "TestingClasses", type: :request do
   end
 end
 
-#  https://www.youtube.com/watch?v=AQ-Vf157Ju8

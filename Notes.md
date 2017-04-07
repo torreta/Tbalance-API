@@ -90,3 +90,7 @@ transaccion_ description currency_id: reference category_id: integer XtimesSalar
 soon, need to destroy the rspec, and make it work or wont progress at al...
 
 could take the banks from the database at work.
+
+# omgosh at last rspec is working, with zombies and useles but working
+rspec spec/lib/zombie_spec.rb
+`https://www.youtube.com/watch?v=Dj19O9kLK6w` # thats the tutorial today
