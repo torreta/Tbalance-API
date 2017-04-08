@@ -8,17 +8,19 @@ describe Zombie do
     
     it "is name Ash" do
         zombie = Zombie.new
-        zombie.name.should == 'Ash' #spectations, renames assertions
+        # zombie.name.should == 'Ash' #spectations, renames assertions
+        expect(zombie.name).to eq('Ash')
     end
     
     it "has no brains" do
         zombie = Zombie.new
-        zombie.brains.should be < 1 # should is the modifier of our test, < is the matcher
+        # zombie.brains.should be < 1 # should is the modifier of our test, < is the matcher
+        expect(zombie.brains).to be < 1
     end
     
     it "zombie is dead" do
         zombie = Zombie.new
-        zombie.alive.should be false #watch that sintax be_falsey works too
+        # zombie.alive.should be false #watch that sintax be_falsey works too
         zombie.alive.should be_falsey
         zombie.alive.should == false
         
@@ -59,3 +61,6 @@ describe Zombie do
 end
 
 #  rspec spec/lib/zombie_spec.rb
+
+# https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
+
