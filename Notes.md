@@ -94,3 +94,6 @@ could take the banks from the database at work.
 # omgosh at last rspec is working, with zombies and useles but working
 rspec spec/lib/zombie_spec.rb
 `https://www.youtube.com/watch?v=Dj19O9kLK6w` # thats the tutorial today
+
+Test Driven Development:
+`https://www.youtube.com/watch?v=HhwElTL-mdI`
