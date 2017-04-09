@@ -32,6 +32,14 @@ Dir[File.dirname(__FILE__) + "/support/*.rb"].each {|f| require f }
 # added 1/1
 ActiveRecord::Migration.maintain_test_schema!
 
+
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
+end
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest

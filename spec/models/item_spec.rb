@@ -1,6 +1,6 @@
-require 'rails_helper'
 require 'spec_helper'
-require 'rspec/rails'
+require 'rails_helper'
+require 'item'
 
 # Test suite for the Item model
 RSpec.describe Item, type: :model do
@@ -11,3 +11,6 @@ RSpec.describe Item, type: :model do
   # ensure column name is present before saving
   it { should validate_presence_of(:name) }
 end
+
+
+# rspec spec/models/item_spec.rb

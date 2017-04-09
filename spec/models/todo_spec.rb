@@ -1,6 +1,6 @@
-require 'rails_helper'
 require 'spec_helper'
-require 'rspec/rails'
+require 'rails_helper'
+require 'todo'
 
 # Test suite for the Todo model
 RSpec.describe Todo, type: :model do
@@ -12,3 +12,5 @@ RSpec.describe Todo, type: :model do
   it { should validate_presence_of(:title) }
   it { should validate_presence_of(:created_by) }
 end
+
+# rspec spec/models/todo_spec.rb

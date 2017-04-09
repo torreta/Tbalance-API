@@ -97,3 +97,6 @@ rspec spec/lib/zombie_spec.rb
 
 Test Driven Development:
 `https://www.youtube.com/watch?v=HhwElTL-mdI`
+
+# at last repaired the error of rspec not working form this command
+bundle exec rspec
