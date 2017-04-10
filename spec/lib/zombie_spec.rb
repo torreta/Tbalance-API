@@ -21,28 +21,26 @@ describe Zombie do
     it "zombie is dead" do
         zombie = Zombie.new
         # zombie.alive.should be false #watch that sintax be_falsey works too
-        zombie.alive.should be_falsey
-        zombie.alive.should == false
+        expect(zombie.alive).to be_falsey
+        expect(zombie.alive).to be false
         
     end
     
     it "is rotting" do
         zombie = Zombie.new
-        zombie.rotting.should be true# should is the modifier of our test, < is the matcher
-        zombie.rotting.should == true
-        zombie.rotting.should be_truthy
+        expect(zombie.rotting).to be true# should is the modifier of our test, < is the matcher
+        expect(zombie.rotting).to be_truthy
         
     end
     
     it "is tall" do
         zombie = Zombie.new
-        zombie.height.should be > 5# should is the modifier of our test, < is the matcher
+        expect(zombie.height).to be > 5# should is the modifier of our test, < is the matcher
     end
     
     it "is hungry" do
         zombie = Zombie.new
-        zombie.hungry?.should == true
-        zombie.should be_hungry
+        expect(zombie.hungry?).to be true
     end
     
     it "too strong and fast" # this way you writte pending ones
@@ -55,7 +53,7 @@ describe Zombie do
     it "are magical" do
         pending # keyword works tooo, marks partially made tests
         zombie = Zombie.new
-        zombie.magical?.should == true
+        expect(zombie.magical?).to be true
 
     end
 end
