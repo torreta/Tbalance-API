@@ -66,7 +66,10 @@ http://api.rubyonrails.org/classes/ActiveModel/Validations/HelperMethods.html
 some classes to make:
 
 eMarker: (economic marker.)(translada a currencies)
-date: date value: decimal desc: string type currency_id:integer references
+date: date 
+value: decimal 
+desc: string type 
+currency_id:integer references: currency
 changeVSlast: decimal
 
 currencies:
@@ -74,13 +77,21 @@ currencies:
  simbol:string 
  alias:string 
  history_id: integer reference: currency_value_id
- formal?: boolean #eggs, milk or dolar / informal, formal.
+ type_id #eggs, milk or dolar / informal, formal.
+
+currency_type:
+name:strig //formal, informal, marcador inflacion, etc
 
 currency_value:
  currency_id: integer reference: currency 
  sample_date: date 
  valueVs: decimal 
  VsCurrency_id: integer
+
+currencies_alias:
+alias: string
+currency_id: integer reference: currency 
+
 
 
 transaccion_ description currency_id: reference category_id: integer XtimesSalary_ decimal
@@ -104,3 +115,8 @@ bundle exec rspec
 run rails server
 `rails s -p $PORT -b $IP`
 
+to follow but not to the letter:
+https://www.youtube.com/watch?v=QIC9gorj-qk
+
+hay que configurar capybara: (en realidad soy un API, es necessario?)
+https://github.com/teamcapybara/capybara#setup
