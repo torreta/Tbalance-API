@@ -101,6 +101,6 @@ Test Driven Development:
 # at last repaired the error of rspec not working form this command
 bundle exec rspec
 
-
 run rails server
 `rails s -p $PORT -b $IP`
+
