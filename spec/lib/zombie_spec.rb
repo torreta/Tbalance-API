@@ -43,19 +43,19 @@ describe Zombie do
         expect(zombie.hungry?).to be true
     end
     
-    it "too strong and fast" # this way you writte pending ones
+    # it "too strong and fast" # this way you writte pending ones
     
-    xit "has superpowers" do
-        #xit marks a pending test to make
+    # xit "has superpowers" do
+    #     #xit marks a pending test to make
     
-    end
+    # end
     
-    it "are magical" do
-        pending # keyword works tooo, marks partially made tests
-        zombie = Zombie.new
-        expect(zombie.magical?).to be true
+    # it "are magical" do
+    #     pending # keyword works tooo, marks partially made tests
+    #     zombie = Zombie.new
+    #     expect(zombie.magical?).to be true
 
-    end
+    # end
 end
 
 #  rspec spec/lib/zombie_spec.rb
