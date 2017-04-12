@@ -1,0 +1,4 @@
+
+class BitcoinVenezuelaAPI
+
+end
