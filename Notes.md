@@ -120,3 +120,7 @@ https://www.youtube.com/watch?v=QIC9gorj-qk
 
 hay que configurar capybara: (en realidad soy un API, es necessario?)
 https://github.com/teamcapybara/capybara#setup
+
+
+tableless models:
+http://railscasts.com/episodes/193-tableless-model?autoplay=true
