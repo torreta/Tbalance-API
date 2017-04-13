@@ -7,6 +7,10 @@ describe BitcoinVenezuelaAPI do
     
     it "API brings meanifull data"
 
+    it "data is a Json"
+    
+    it "data is parseable"
+    
     it "hasnt changed its structure"
     
     it "we have internet"
