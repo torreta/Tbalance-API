@@ -3,6 +3,12 @@ require "btcvenezuela_api"
 
 describe BitcoinVenezuelaAPI do
     
+    it "we have internet" do
+        server = BitcoinVenezuelaAPI.new()
+        expect(server.internet?).to be true
+        expect(server.internet_http?).to be true
+    end
+    
     it "API is Active"
     
     it "API brings meanifull data"
@@ -14,8 +20,6 @@ describe BitcoinVenezuelaAPI do
     it "data is being inserted correctly"
 
     it "hasnt changed its structure"
-    
-    it "we have internet"
     
     it "worker is active"
     
