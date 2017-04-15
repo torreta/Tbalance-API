@@ -11,9 +11,17 @@ describe DolarTodayAPI do
     
     it "data is parseable"
 
+    it "data is being inserted correctly"
+
     it "hasnt changed its structure"
     
     it "we have internet"
+    
+    it "worker is active"
+    
+    it "value is float"
+    
+    it "description vs is correct"    
     
 end
 
