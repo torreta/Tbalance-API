@@ -118,6 +118,7 @@ GEM
     multi_json (1.12.1)
     multi_xml (0.6.0)
     nenv (0.3.0)
+    net-ping (2.0.1)
     nokogiri (1.7.1)
       mini_portile2 (~> 2.1.0)
     notiffany (0.1.1)
@@ -235,9 +236,11 @@ DEPENDENCIES
   factory_girl_rails (~> 4.0)
   faker
   guard-rspec
-  httparty
+  httparty (~> 0.14.0)
   jbuilder (~> 2.0)
   jquery-rails
+  multi_xml (~> 0.6.0)
+  net-ping (~> 2.0, >= 2.0.1)
   rails (= 4.2.5)
   rspec-rails (~> 3.5)
   sass-rails (~> 5.0)
