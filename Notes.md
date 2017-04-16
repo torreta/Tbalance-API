@@ -128,7 +128,7 @@ http://railscasts.com/episodes/193-tableless-model?autoplay=true
 look for new gems here:
 `https://rubygems.org/`
 
-remember to add new features 
+remember to add new features  (make the file.)
 "i want to <make something> in order 
 to <fullfill an necesity> 
 so <we can get an objective>"
