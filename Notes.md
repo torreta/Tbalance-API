@@ -86,7 +86,7 @@ currency_value:
  currency_id: integer reference: currency 
  sample_date: date 
  valueVs: decimal 
- VsCurrency_id: integer
+ VsCurrency_id: integer reference: currency 
 
 currencies_alias:
 alias: string
