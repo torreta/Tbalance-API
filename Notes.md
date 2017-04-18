@@ -132,3 +132,9 @@ remember to add new features  (make the file.)
 "i want to <make something> in order 
 to <fullfill an necesity> 
 so <we can get an objective>"
+
+
+on http site availeability:
+http://ruby-doc.org/stdlib-2.4.1/libdoc/net/http/rdoc/index.html
+
+so, nothing tonight, google docs as hell...
