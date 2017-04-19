@@ -9,7 +9,10 @@ describe DolarTodayAPI do
         expect(server.internet_http?).to be true
     end
     
-    it "API is Active"
+    it "API is Active" do
+        server = DolarTodayAPI.new()
+        expect(server.active_api?).to be true
+    end
     
     it "API brings meanifull data"
 
