@@ -30,6 +30,12 @@ class DolarTodayAPI
         return res.is_a?(Net::HTTPSuccess) 
     end
 
-    
+    # data can be parsed?
+    def parseable?
+        uri = URI('http://api.bitcoinvenezuela.com/DolarToday.php?json=yes')
+        res = Net::HTTP.get_response(uri)
+        body = res.body
+        return eval(body).is_a?(Hash)
+    end   
  
 end

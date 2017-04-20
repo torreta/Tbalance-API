@@ -14,7 +14,10 @@ describe DolarTodayAPI do
         expect(server.active_api?).to be true
     end
     
-    it "API brings meanifull data"
+    it "API gives Parseable data" do
+        server = DolarTodayAPI.new()
+        expect(server.parseable?).to be true
+    end
 
     it "data is a Json"
     

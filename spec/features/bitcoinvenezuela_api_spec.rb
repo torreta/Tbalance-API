@@ -14,7 +14,7 @@ describe BitcoinVenezuelaAPI do
         expect(server.active_api?).to be true
     end
     
-    it "API brings meanifull data"
+    it "API gives Parseable data" 
 
     it "data is a Json"
     

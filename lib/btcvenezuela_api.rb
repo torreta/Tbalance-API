@@ -22,11 +22,12 @@ class BitcoinVenezuelaAPI
         check.ping?
     end
     
+    # checking if the API is active, read below...
     def active_api?
         uri = URI('https://github.com/btcven/api')
         res = Net::HTTP.get_response(uri)
         return res.is_a?(Net::HTTPSuccess) 
     end
     
-    
+
 end
