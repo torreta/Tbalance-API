@@ -137,4 +137,8 @@ so <we can get an objective>"
 on http site availeability:
 http://ruby-doc.org/stdlib-2.4.1/libdoc/net/http/rdoc/index.html
 
-so, nothing tonight, google docs as hell...
+valid hash?
+http://stackoverflow.com/questions/39705580/how-to-check-if-a-string-contain-valid-hash
+
+values on hash:
+http://stackoverflow.com/questions/5348449/get-a-particular-key-value-from-json-in-ruby
