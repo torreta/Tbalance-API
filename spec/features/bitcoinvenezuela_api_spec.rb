@@ -13,8 +13,12 @@ describe BitcoinVenezuelaAPI do
         server = BitcoinVenezuelaAPI.new()
         expect(server.active_api?).to be true
     end
-    
-    it "API gives Parseable data" 
+        
+    it "API gives Parseable data" do
+        server = BitcoinVenezuelaAPI.new()
+        expect(server.parseable?).to be true
+    end
+
 
     it "data is a Json"
     

@@ -24,10 +24,18 @@ class BitcoinVenezuelaAPI
     
     # checking if the API is active, read below...
     def active_api?
-        uri = URI('https://github.com/btcven/api')
+        uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         return res.is_a?(Net::HTTPSuccess) 
     end
     
+    # data can be parsed?
+    def parseable?
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = res.body
+        return eval(body).is_a?(Hash)
+    end   
+ 
 
 end
