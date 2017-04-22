@@ -38,4 +38,8 @@ class DolarTodayAPI
         return eval(body).is_a?(Hash)
     end   
  
+ 
+ 
+ 
+ 
 end

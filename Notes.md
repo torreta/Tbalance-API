@@ -142,3 +142,6 @@ http://stackoverflow.com/questions/39705580/how-to-check-if-a-string-contain-val
 
 values on hash:
 http://stackoverflow.com/questions/5348449/get-a-particular-key-value-from-json-in-ruby
+
+puedes hacer assert si el tamaño del hash ha cambiado por la cantidad de elementos que trae
+hazh.size? quizas?

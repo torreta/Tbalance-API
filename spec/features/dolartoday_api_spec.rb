@@ -19,14 +19,15 @@ describe DolarTodayAPI do
         expect(server.parseable?).to be true
     end
 
-    it "data is a Json"
-    
-    it "data is parseable"
+    # should see if all important data is there
+    it "hasnt changed its structure" 
+
+
+
+
 
     it "data is being inserted correctly"
 
-    it "hasnt changed its structure"
-    
     it "worker is active"
     
     it "value is float"

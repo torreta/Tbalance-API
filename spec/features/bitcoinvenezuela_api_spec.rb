@@ -19,15 +19,14 @@ describe BitcoinVenezuelaAPI do
         expect(server.parseable?).to be true
     end
 
+    it "hasnt changed its structure"
 
-    it "data is a Json"
-    
-    it "data is parseable"
+
+
+
 
     it "data is being inserted correctly"
 
-    it "hasnt changed its structure"
-    
     it "worker is active"
     
     it "value is float"
@@ -36,4 +35,4 @@ describe BitcoinVenezuelaAPI do
     
 end
 
-# https://github.com/btcven/api
+# http://api.bitcoinvenezuela.com/
