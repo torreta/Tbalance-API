@@ -36,6 +36,15 @@ class BitcoinVenezuelaAPI
         body = res.body
         return eval(body).is_a?(Hash)
     end   
- 
-
+    
+    # data can be parsed?
+    def hash_timestamp
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        tiempo = body[:time][:timestamp]
+        return Time.at(tiempo)
+    end   
+    
+    
 end

@@ -19,10 +19,15 @@ describe BitcoinVenezuelaAPI do
         expect(server.parseable?).to be true
     end
 
+    it "data has timestamp" do
+      server = BitcoinVenezuelaAPI.new()
+      expect(Time.at(server.hash_timestamp).is_a?(Time)).to be true
+    end
+
     it "hasnt changed its structure"
 
 
-
+    
 
 
     it "data is being inserted correctly"
