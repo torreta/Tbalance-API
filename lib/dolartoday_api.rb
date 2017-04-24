@@ -38,7 +38,15 @@ class DolarTodayAPI
         return eval(body).is_a?(Hash)
     end   
  
- 
+     #gime timestamp
+    def hash_timestamp
+        uri = URI('http://api.bitcoinvenezuela.com/DolarToday.php?json=yes')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        tiempo = body[:_timestamp][:epoch]
+        tiempo = DateTime.strptime(tiempo,'%s')
+        return Time.at(tiempo)
+    end   
  
  
  
