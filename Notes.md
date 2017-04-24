@@ -145,3 +145,7 @@ http://stackoverflow.com/questions/5348449/get-a-particular-key-value-from-json-
 
 puedes hacer assert si el tamaño del hash ha cambiado por la cantidad de elementos que trae
 hazh.size? quizas?
+
+
+DateTime and Time difference parsing:
+http://stackoverflow.com/questions/7816365/how-to-convert-a-unix-timestamp-seconds-since-epoch-to-ruby-datetime
