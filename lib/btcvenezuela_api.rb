@@ -38,7 +38,7 @@ class BitcoinVenezuelaAPI
     end   
     
     #gime timestamp
-    def hash_timestamp
+    def latest_sample_timestamp
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -46,5 +46,12 @@ class BitcoinVenezuelaAPI
         return Time.at(tiempo)
     end   
     
-    
+    #gime USD value
+    def latest_sample_USD_value
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        value = body[:BTC][:USD]
+        return value
+    end   
 end

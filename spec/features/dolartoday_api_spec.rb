@@ -24,6 +24,12 @@ describe DolarTodayAPI do
       expect(Time.at(server.hash_timestamp).is_a?(Time)).to be true
     end
 
+    it "data has USD value" do
+      server = DolarTodayAPI.new()
+      expect(Time.at(server.hash_timestamp).is_a?(Time)).to be true
+    end
+
+
 
     # should see if all important data is there
     it "hasnt changed its structure" 
