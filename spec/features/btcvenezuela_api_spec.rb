@@ -24,9 +24,29 @@ describe BitcoinVenezuelaApi do
       expect(Time.at(server.latest_sample_timestamp).is_a?(Time)).to be true
     end
     
-    it "data has USD value" do
+    it "BTC USD value present" do
       server = BitcoinVenezuelaApi.new()
       expect(server.latest_sample_value_BTC_to_USD.is_a?(Float)).to be true
+    end    
+    
+    it "BTC EUR value present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_value_BTC_to_EUR.is_a?(Float)).to be true
+    end
+
+    it "BTC VEF value present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_value_BTC_to_VEF.is_a?(Float)).to be true
+    end
+    
+    it "BTC ARS value present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_value_BTC_to_ARS.is_a?(Float)).to be true
+    end
+    
+    it "BTC LTC value present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_value_BTC_to_LTC.is_a?(Float)).to be true
     end
 
 
