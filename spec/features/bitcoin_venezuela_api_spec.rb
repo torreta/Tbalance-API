@@ -49,7 +49,9 @@ describe BitcoinVenezuelaApi do
       expect(server.latest_sample_value_BTC_to_LTC.is_a?(Float)).to be true
     end
 
-
+    # missing test for LTC, Exchange rates,LocalBitcoins_coupons and variations
+    # dunno what are most of those.
+    
     it "hasnt changed its structure" 
 
     it "data is being inserted correctly"

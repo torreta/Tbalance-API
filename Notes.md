@@ -80,13 +80,18 @@ currencies:
  type_id #eggs, milk or dolar / informal, formal.
 
 currency_type:
-name:strig //formal, informal, marcador inflacion, etc
+name:strig //formal, informal etc
+marcador inflacion: boolean
 
 currency_value:
  currency_id: integer reference: currency 
  sample_date: date 
  valueVs: decimal 
- VsCurrency_id: integer reference: currency 
+ VsCurrency_id: integer reference: currency
+ source:source_id
+ 
+source:
+ name: string // API, Calculation, exchange_rate, etc
 
 currencies_alias:
 alias: string
