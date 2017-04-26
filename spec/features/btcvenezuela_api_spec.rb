@@ -1,37 +1,36 @@
 require "spec_helper"
-require "btcvenezuela_api"
+require "bitcoin_venezuela_api"
 
-describe BitcoinVenezuelaAPI do
+describe BitcoinVenezuelaApi do
     
     it "we have internet" do
-        server = BitcoinVenezuelaAPI.new()
+        server = BitcoinVenezuelaApi.new()
         expect(server.internet?).to be true
         expect(server.internet_http?).to be true
     end
     
     it "API is Active" do
-        server = BitcoinVenezuelaAPI.new()
+        server = BitcoinVenezuelaApi.new()
         expect(server.active_api?).to be true
     end
         
     it "API gives Parseable data" do
-        server = BitcoinVenezuelaAPI.new()
+        server = BitcoinVenezuelaApi.new()
         expect(server.parseable?).to be true
     end
 
     it "data has timestamp" do
-      server = BitcoinVenezuelaAPI.new()
+      server = BitcoinVenezuelaApi.new()
       expect(Time.at(server.latest_sample_timestamp).is_a?(Time)).to be true
     end
     
     it "data has USD value" do
-      server = BitcoinVenezuelaAPI.new()
-      expect(server.latest_sample_USD_value.is_a?(Float)).to be true
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_value_BTC_to_USD.is_a?(Float)).to be true
     end
 
 
     it "hasnt changed its structure" 
-
 
     it "data is being inserted correctly"
 

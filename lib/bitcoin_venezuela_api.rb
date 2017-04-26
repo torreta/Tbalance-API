@@ -1,11 +1,11 @@
 require 'net/ping'
 
-class BitcoinVenezuelaAPI
+class BitcoinVenezuelaApi
     # examples: 
     # http://stackoverflow.com/questions/21081639/ping-for-reachability-of-remote-host-in-ruby
     
     # API to check:
-    # http://api.bitcoinvenezuela.com/DolarToday.php?json=yes
+    # http://api.bitcoinvenezuela.com/
     
     
     # checking if our server has internet connection 
@@ -46,12 +46,49 @@ class BitcoinVenezuelaAPI
         return Time.at(tiempo)
     end   
     
-    #gime USD value
-    def latest_sample_USD_value
+    def latest_sample_value_BTC_to_USD
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
         value = body[:BTC][:USD]
         return value
+    end       
+    
+    def latest_sample_value_BTC_to_EUR
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        value = body[:BTC][:EUR]
+        return value
+    end      
+    
+    def latest_sample_value_BTC_to_VEF
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        value = body[:BTC][:VEF]
+        return value
+    end      
+    
+    def latest_sample_value_BTC_to_ARS
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        value = body[:BTC][:ARS]
+        return value
+    end       
+    
+    def latest_sample_value_BTC_to_LTC
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        value = body[:BTC][:LTC]
+        return value.to_f
     end   
+    
+    
+    
+    
+    
+    
 end

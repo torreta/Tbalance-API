@@ -1,6 +1,6 @@
 require 'net/ping'
 
-class DolarTodayAPI
+class DolarTodayApi
     # examples: 
     # http://stackoverflow.com/questions/21081639/ping-for-reachability-of-remote-host-in-ruby
     
