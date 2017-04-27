@@ -80,8 +80,9 @@ describe BitcoinVenezuelaApi do
     
     
     
-    
+    # idea: count hash sizes, etc, if that changes, say it
     it "hasnt changed its structure" 
+
 
     it "data is being inserted correctly"
 
