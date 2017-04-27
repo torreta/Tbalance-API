@@ -49,8 +49,37 @@ describe BitcoinVenezuelaApi do
       expect(server.latest_sample_value_BTC_to_LTC.is_a?(Float)).to be true
     end
 
-    # missing test for LTC, Exchange rates,LocalBitcoins_coupons and variations
+    # LTC
+    it "LTC USD value present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_value_LTC_to_USD.is_a?(Float)).to be true
+    end       
+    
+    it "LTC EUR value present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_value_LTC_to_EUR.is_a?(Float)).to be true
+    end       
+    
+    it "LTC VEF value present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_value_LTC_to_VEF.is_a?(Float)).to be true
+    end       
+    
+    it "LTC ARS value present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_value_LTC_to_ARS.is_a?(Float)).to be true
+    end       
+    
+    it "LTC BTC value present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_value_LTC_to_BTC.is_a?(Float)).to be true
+    end   
+    
+    # missing test Exchange rates,LocalBitcoins_coupons and variations
     # dunno what are most of those.
+    
+    
+    
     
     it "hasnt changed its structure" 
 
