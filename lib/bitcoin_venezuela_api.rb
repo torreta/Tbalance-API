@@ -133,9 +133,50 @@ class BitcoinVenezuelaApi
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
-        value = body[:LTC][:BTC]
+        value = body[:exchange_rates][:EUR_USD]
         return value
     end   
+    
+    def latest_sample_exchange_rate_VEF_USD
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        value = body[:exchange_rates][:VEF_USD]
+        return value
+    end 
+    
+    def latest_sample_exchange_rate_ARS_USD
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        value = body[:exchange_rates][:ARS_USD]
+        return value
+    end   
+        
+    def latest_sample_exchange_rate_XVE_USD
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        value = body[:exchange_rates][:XVE_USD]
+        return value
+    end   
+        
+    def latest_sample_exchange_rate_XVE_EUR
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        value = body[:exchange_rates][:XVE_EUR]
+        return value
+    end   
+        
+    def latest_sample_exchange_rate_XAR_USD
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        value = body[:exchange_rates][:XAR_USD]
+        return value.to_f
+    end   
+    
     
     
     

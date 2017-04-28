@@ -77,7 +77,35 @@ describe BitcoinVenezuelaApi do
     
     # missing test Exchange rates,LocalBitcoins_coupons and variations
     # dunno what are most of those.
+    it " Exchange rate for EUR_USD present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_exchange_rate_EUR_USD.is_a?(Float)).to be true
+    end    
     
+    it " Exchange rate for VEF_USD present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_exchange_rate_VEF_USD.is_a?(Float)).to be true
+    end    
+    
+    it " Exchange rate for ARS_USD present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_exchange_rate_ARS_USD.is_a?(Float)).to be true
+    end    
+    
+    it " Exchange rate for XVE_USD present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_exchange_rate_XVE_USD.is_a?(Float)).to be true
+    end    
+    
+    it " Exchange rate for XVE_EUR present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_exchange_rate_XVE_EUR.is_a?(Float)).to be true
+    end    
+    
+    it " Exchange rate for XAR_USD present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.latest_sample_exchange_rate_XAR_USD.is_a?(Float)).to be true
+    end
     
     
     # idea: count hash sizes, etc, if that changes, say it
