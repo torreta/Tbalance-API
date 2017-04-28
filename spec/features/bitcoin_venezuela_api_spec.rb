@@ -21,90 +21,90 @@ describe BitcoinVenezuelaApi do
 
     it "data has timestamp" do
       server = BitcoinVenezuelaApi.new()
-      expect(Time.at(server.latest_sample_timestamp).is_a?(Time)).to be true
+      expect(Time.at(server.TimeStamp).is_a?(Time)).to be true
     end
     
     it "BTC USD value present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_value_BTC_to_USD.is_a?(Float)).to be true
+      expect(server.BTC_to_USD.is_a?(Float)).to be true
     end    
     
     it "BTC EUR value present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_value_BTC_to_EUR.is_a?(Float)).to be true
+      expect(server.BTC_to_EUR.is_a?(Float)).to be true
     end
 
     it "BTC VEF value present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_value_BTC_to_VEF.is_a?(Float)).to be true
+      expect(server.BTC_to_VEF.is_a?(Float)).to be true
     end
     
     it "BTC ARS value present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_value_BTC_to_ARS.is_a?(Float)).to be true
+      expect(server.BTC_to_ARS.is_a?(Float)).to be true
     end
     
     it "BTC LTC value present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_value_BTC_to_LTC.is_a?(Float)).to be true
+      expect(server.BTC_to_LTC.is_a?(Float)).to be true
     end
 
     # LTC
     it "LTC USD value present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_value_LTC_to_USD.is_a?(Float)).to be true
+      expect(server.LTC_to_USD.is_a?(Float)).to be true
     end       
     
     it "LTC EUR value present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_value_LTC_to_EUR.is_a?(Float)).to be true
+      expect(server.LTC_to_EUR.is_a?(Float)).to be true
     end       
     
     it "LTC VEF value present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_value_LTC_to_VEF.is_a?(Float)).to be true
+      expect(server.LTC_to_VEF.is_a?(Float)).to be true
     end       
     
     it "LTC ARS value present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_value_LTC_to_ARS.is_a?(Float)).to be true
+      expect(server.LTC_to_ARS.is_a?(Float)).to be true
     end       
     
     it "LTC BTC value present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_value_LTC_to_BTC.is_a?(Float)).to be true
+      expect(server.LTC_to_BTC.is_a?(Float)).to be true
     end   
     
     # missing test Exchange rates,LocalBitcoins_coupons and variations
     # dunno what are most of those.
     it " Exchange rate for EUR_USD present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_exchange_rate_EUR_USD.is_a?(Float)).to be true
+      expect(server.rate_EUR_USD.is_a?(Float)).to be true
     end    
     
     it " Exchange rate for VEF_USD present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_exchange_rate_VEF_USD.is_a?(Float)).to be true
+      expect(server.rate_VEF_USD.is_a?(Float)).to be true
     end    
     
     it " Exchange rate for ARS_USD present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_exchange_rate_ARS_USD.is_a?(Float)).to be true
+      expect(server.rate_ARS_USD.is_a?(Float)).to be true
     end    
     
     it " Exchange rate for XVE_USD present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_exchange_rate_XVE_USD.is_a?(Float)).to be true
+      expect(server.rate_XVE_USD.is_a?(Float)).to be true
     end    
     
     it " Exchange rate for XVE_EUR present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_exchange_rate_XVE_EUR.is_a?(Float)).to be true
+      expect(server.rate_XVE_EUR.is_a?(Float)).to be true
     end    
     
     it " Exchange rate for XAR_USD present" do
       server = BitcoinVenezuelaApi.new()
-      expect(server.latest_sample_exchange_rate_XAR_USD.is_a?(Float)).to be true
+      expect(server.rate_XAR_USD.is_a?(Float)).to be true
     end
     
     

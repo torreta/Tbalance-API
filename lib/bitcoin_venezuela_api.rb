@@ -38,7 +38,7 @@ class BitcoinVenezuelaApi
     end   
     
     #gime timestamp
-    def latest_sample_timestamp
+    def TimeStamp
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -46,7 +46,7 @@ class BitcoinVenezuelaApi
         return Time.at(tiempo)
     end   
     
-    def latest_sample_value_BTC_to_USD
+    def BTC_to_USD
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -54,7 +54,7 @@ class BitcoinVenezuelaApi
         return value
     end       
     
-    def latest_sample_value_BTC_to_EUR
+    def BTC_to_EUR
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -62,7 +62,7 @@ class BitcoinVenezuelaApi
         return value
     end      
     
-    def latest_sample_value_BTC_to_VEF
+    def BTC_to_VEF
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -70,7 +70,7 @@ class BitcoinVenezuelaApi
         return value
     end      
     
-    def latest_sample_value_BTC_to_ARS
+    def BTC_to_ARS
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -78,7 +78,7 @@ class BitcoinVenezuelaApi
         return value
     end       
     
-    def latest_sample_value_BTC_to_LTC
+    def BTC_to_LTC
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -87,7 +87,7 @@ class BitcoinVenezuelaApi
     end       
     
     # LTC
-    def latest_sample_value_LTC_to_USD
+    def LTC_to_USD
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -95,7 +95,7 @@ class BitcoinVenezuelaApi
         return value
     end   
     
-    def latest_sample_value_LTC_to_EUR
+    def LTC_to_EUR
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -103,7 +103,7 @@ class BitcoinVenezuelaApi
         return value
     end   
     
-    def latest_sample_value_LTC_to_VEF
+    def LTC_to_VEF
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -111,7 +111,7 @@ class BitcoinVenezuelaApi
         return value
     end   
     
-    def latest_sample_value_LTC_to_ARS
+    def LTC_to_ARS
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -120,7 +120,7 @@ class BitcoinVenezuelaApi
     end   
     
     
-    def latest_sample_value_LTC_to_BTC
+    def LTC_to_BTC
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -128,8 +128,8 @@ class BitcoinVenezuelaApi
         return value
     end   
     
-    # exchange_rates
-    def latest_sample_exchange_rate_EUR_USD
+    # exchange rates
+    def rate_EUR_USD
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -137,7 +137,7 @@ class BitcoinVenezuelaApi
         return value
     end   
     
-    def latest_sample_exchange_rate_VEF_USD
+    def rate_VEF_USD
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -145,7 +145,7 @@ class BitcoinVenezuelaApi
         return value
     end 
     
-    def latest_sample_exchange_rate_ARS_USD
+    def rate_ARS_USD
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -153,7 +153,7 @@ class BitcoinVenezuelaApi
         return value
     end   
         
-    def latest_sample_exchange_rate_XVE_USD
+    def rate_XVE_USD
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -161,7 +161,7 @@ class BitcoinVenezuelaApi
         return value
     end   
         
-    def latest_sample_exchange_rate_XVE_EUR
+    def rate_XVE_EUR
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
@@ -169,7 +169,7 @@ class BitcoinVenezuelaApi
         return value
     end   
         
-    def latest_sample_exchange_rate_XAR_USD
+    def rate_XAR_USD
         uri = URI('http://api.bitcoinvenezuela.com/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
