@@ -155,4 +155,4 @@ hazh.size? quizas?
 DateTime and Time difference parsing:
 http://stackoverflow.com/questions/7816365/how-to-convert-a-unix-timestamp-seconds-since-epoch-to-ruby-datetime
 
-break day, i guess
+break day, i guess, part2
