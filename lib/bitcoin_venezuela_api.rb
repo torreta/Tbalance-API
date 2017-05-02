@@ -37,6 +37,58 @@ class BitcoinVenezuelaApi
         return eval(body).is_a?(Hash)
     end   
     
+    # raw data hash
+    def get_hash
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        return body
+    end   
+    
+    # I start assuming that the the API info hasnt changed
+    # and if something has changed i which one.
+    def changed?
+        changed = "false" 
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        
+        # 6 mayor tags: time, BTC, LTC, exchange_rates, LocalBitcoins_coupons, variations
+        unless body.size == 6  
+            changed = "One on the mayor tags has changed"    
+        end        
+        
+        # time: timestamp
+        unless body[:time].size == 1            
+            changed = "Timestamp tag has changed"    
+        end
+        # BTC: USD, EUR, VEF, ARS, BTC
+        unless body[:BTC].size == 5
+            changed = "BTC tag fields values have changed"    
+        end
+        
+        # LTC: USD, EUR, VEF, ARS, BTC
+        unless body[:LTC].size == 5
+            changed = "LTC tag fields Values have changed"    
+        end
+        
+        # exchange_rates: EUR_USD, VEF_USD, ARS_USD, XVE_USD, XVE_EUR, XAR_USD
+        unless body[:exchange_rates].size == 6  
+            changed = "exchange_rates tag fields Values have changed"  
+        end
+        
+        # LocalBitcoins_coupons: USD, XVE
+        unless body[:LocalBitcoins_coupons].size == 2 
+            changed = "LocalBitcoins_coupons tag fields Values have changed"  
+        end
+        
+        # variations: BTC, LTC
+        unless body[:variations].size == 2
+            changed = "variations tag fields Values have changed"  
+        end
+        
+        return changed
+    end   
 
     #gime timestamp
     def TimeStamp
@@ -194,63 +246,5 @@ class BitcoinVenezuelaApi
         value = body[:LocalBitcoins_coupons][:XVE]
         return value
     end   
-    
-    # raw data hash
-    def get_hash
-        uri = URI('http://api.bitcoinvenezuela.com/')
-        res = Net::HTTP.get_response(uri)
-        body = eval(res.body)
-        return body
-    end   
-    
-    # I start assuming that the the API info hasnt changed
-    # and if something has changed i which one.
-    def changed?
-        changed = "false" 
-        uri = URI('http://api.bitcoinvenezuela.com/')
-        res = Net::HTTP.get_response(uri)
-        body = eval(res.body)
-        
-        # 6 mayor tags: time, BTC, LTC, exchange_rates, LocalBitcoins_coupons, variations
-        unless body.size == 6  
-            changed = "One on the mayor tags has changed"    
-        end        
-        
-        # time: timestamp
-        unless body[:time].size == 1            
-            changed = "Timestamp tag has changed"    
-        end
-        # BTC: USD, EUR, VEF, ARS, BTC
-        unless body[:BTC].size == 5
-            changed = "BTC tag fields values have changed"    
-        end
-        
-        # LTC: USD, EUR, VEF, ARS, BTC
-        unless body[:LTC].size == 5
-            changed = "LTC tag fields Values have changed"    
-        end
-        
-        # exchange_rates: EUR_USD, VEF_USD, ARS_USD, XVE_USD, XVE_EUR, XAR_USD
-        unless body[:exchange_rates].size == 6  
-            changed = "exchange_rates tag fields Values have changed"  
-        end
-        
-        # LocalBitcoins_coupons: USD, XVE
-        unless body[:LocalBitcoins_coupons].size == 2 
-            changed = "LocalBitcoins_coupons tag fields Values have changed"  
-        end
-        
-        # variations: BTC, LTC
-        unless body[:variations].size == 2
-            changed = "variations tag fields Values have changed"  
-        end
-        
-        return changed
-    end   
-
-    
-    
-    
-    
     
 end

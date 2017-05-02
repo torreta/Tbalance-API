@@ -19,6 +19,17 @@ describe BitcoinVenezuelaApi do
         expect(server.parseable?).to be true
     end
 
+    it "Raw hash request working " do 
+      server = BitcoinVenezuelaApi.new()
+      expect(server.get_hash.is_a?(Hash)).to be true
+    end 
+    
+    # idea: count hash sizes, etc, if that changes, say it
+    it "hasnt changed its structure" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.changed?).to eq("false")
+    end
+
     it "data has timestamp" do
       server = BitcoinVenezuelaApi.new()
       expect(Time.at(server.TimeStamp).is_a?(Time)).to be true
@@ -123,18 +134,6 @@ describe BitcoinVenezuelaApi do
       expect(server.local_XVE.is_a?(Float)).to be true
     end
     
-    it "Raw hash request working " do 
-      server = BitcoinVenezuelaApi.new()
-      expect(server.get_hash.is_a?(Hash)).to be true
-    end 
-    
-    
-    # idea: count hash sizes, etc, if that changes, say it
-    it "hasnt changed its structure" do
-      server = BitcoinVenezuelaApi.new()
-      expect(server.changed?).to eq("false")
-    end
-
 
     it "data is being inserted correctly"
 
