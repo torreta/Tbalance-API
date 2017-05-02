@@ -155,4 +155,14 @@ hazh.size? quizas?
 DateTime and Time difference parsing:
 http://stackoverflow.com/questions/7816365/how-to-convert-a-unix-timestamp-seconds-since-epoch-to-ruby-datetime
 
+add luck to stadistics:
+
+read:
+http://organofcorti.blogspot.com/2015/07/faq-bitcoin-mining-and-luck-statistic.html
+
+Luck = mean(expected shares per round / actual shares per round)
+ Luck statistic = mean(actual shares per round / expected shares per round) 
+i.e. Luck = 1/Luck statistic
+
+
 break day, i guess, part2, 3... ups

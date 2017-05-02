@@ -77,53 +77,63 @@ describe BitcoinVenezuelaApi do
     
     # missing test Exchange rates,LocalBitcoins_coupons and variations
     # dunno what are most of those.
-    it " Exchange rate for EUR_USD present" do
+    it "Exchange rate for EUR_USD present" do
       server = BitcoinVenezuelaApi.new()
       expect(server.rate_EUR_USD.is_a?(Float)).to be true
     end    
     
-    it " Exchange rate for VEF_USD present" do
+    it "Exchange rate for VEF_USD present" do
       server = BitcoinVenezuelaApi.new()
       expect(server.rate_VEF_USD.is_a?(Float)).to be true
     end    
     
-    it " Exchange rate for ARS_USD present" do
+    it "Exchange rate for ARS_USD present" do
       server = BitcoinVenezuelaApi.new()
       expect(server.rate_ARS_USD.is_a?(Float)).to be true
     end    
     
-    it " Exchange rate for XVE_USD present" do
+    it "Exchange rate for XVE_USD present" do
       server = BitcoinVenezuelaApi.new()
       expect(server.rate_XVE_USD.is_a?(Float)).to be true
     end    
     
-    it " Exchange rate for XVE_EUR present" do
+    it "Exchange rate for XVE_EUR present" do
       server = BitcoinVenezuelaApi.new()
       expect(server.rate_XVE_EUR.is_a?(Float)).to be true
     end    
     
-    it " Exchange rate for XAR_USD present" do
+    it "Exchange rate for XAR_USD present" do
       server = BitcoinVenezuelaApi.new()
       expect(server.rate_XAR_USD.is_a?(Float)).to be true
     end
     
     # LocalBitcoins_coupons
-    it " Local USD present" do
+    it "Local USD present" do
       server = BitcoinVenezuelaApi.new()
       expect(server.rate_XAR_USD.is_a?(Float)).to be true
     end    
     
-    it " Local USD present" do
+    it "Local USD present" do
       server = BitcoinVenezuelaApi.new()
       expect(server.local_USD.is_a?(Float)).to be true
     end
     
-    it " Local XVE present" do
+    it "Local XVE present" do
       server = BitcoinVenezuelaApi.new()
       expect(server.local_XVE.is_a?(Float)).to be true
     end
+    
+    it "Raw hash request working " do 
+      server = BitcoinVenezuelaApi.new()
+      expect(server.get_hash.is_a?(Hash)).to be true
+    end 
+    
+    
     # idea: count hash sizes, etc, if that changes, say it
-    it "hasnt changed its structure" 
+    it "hasnt changed its structure" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.changed?).to eq("false")
+    end
 
 
     it "data is being inserted correctly"
