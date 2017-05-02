@@ -177,7 +177,22 @@ class BitcoinVenezuelaApi
         return value.to_f
     end   
     
+    # LocalBitcoins_coupons":{"USD":"1487.07","XVE":6890086.0431}
+    def local_USD
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        value = body[:LocalBitcoins_coupons][:USD]
+        return value.to_f
+    end       
     
+    def local_XVE
+        uri = URI('http://api.bitcoinvenezuela.com/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        value = body[:LocalBitcoins_coupons][:XVE]
+        return value
+    end   
     
     
 end

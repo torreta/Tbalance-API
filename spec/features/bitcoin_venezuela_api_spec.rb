@@ -107,7 +107,21 @@ describe BitcoinVenezuelaApi do
       expect(server.rate_XAR_USD.is_a?(Float)).to be true
     end
     
+    # LocalBitcoins_coupons
+    it " Local USD present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.rate_XAR_USD.is_a?(Float)).to be true
+    end    
     
+    it " Local USD present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.local_USD.is_a?(Float)).to be true
+    end
+    
+    it " Local XVE present" do
+      server = BitcoinVenezuelaApi.new()
+      expect(server.local_XVE.is_a?(Float)).to be true
+    end
     # idea: count hash sizes, etc, if that changes, say it
     it "hasnt changed its structure" 
 
