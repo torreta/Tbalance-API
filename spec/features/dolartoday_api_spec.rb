@@ -19,6 +19,18 @@ describe DolarTodayApi do
         expect(server.parseable?).to be true
     end
 
+
+    it "Raw hash request working " do 
+      server = DolarTodayApi.new()
+      expect(server.get_hash.is_a?(Hash)).to be true
+    end 
+
+    # should see if all important data is there
+    it "hasnt changed its structure" do
+      server = DolarTodayApi.new()
+      expect(server.changed?).to eq("false")
+    end
+
     it "data has timestamp" do
       server = DolarTodayApi.new()
       expect(Time.at(server.hash_timestamp).is_a?(Time)).to be true
@@ -240,10 +252,6 @@ describe DolarTodayApi do
       server = DolarTodayApi.new()
       expect(server.MISC_reservas.is_a?(Float)).to be true
     end
-
-
-    # should see if all important data is there
-    it "hasnt changed its structure" 
 
 
     it "data is being inserted correctly"

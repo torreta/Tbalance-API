@@ -38,7 +38,91 @@ class DolarTodayApi
         return eval(body).is_a?(Hash)
     end   
  
-     #gime timestamp
+    # Hash
+    def get_hash
+        uri = URI('http://api.bitcoinvenezuela.com/DolarToday.php?json=yes')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        return body
+    end
+ 
+    # I start assuming that the the API info hasnt changed
+    # and if something has changed i which one.
+    def changed?
+        changed = "false" 
+        uri = URI('http://api.bitcoinvenezuela.com/DolarToday.php?json=yes')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        
+        # 6 mayor tags: _antibloqueo, _labels, _timestamp, USD, EUR, COL, GOLD, USDVEF, USDCOL, EURUSD, BCV, MISC
+        unless body.size == 12
+            changed = "One on the mayor tags has changed"    
+        end        
+        
+        #  _antibloqueo
+        unless body[:_antibloqueo].size == 10
+            changed = "_antibloqueo tags has changed"    
+        end        
+            
+        # _labels
+        unless body[:_labels].size == 6
+            changed = "_labels tags has changed"    
+        end
+        
+        # _timestamp
+        unless body[:_timestamp].size == 7
+            changed = "_timestamp tags has changed"    
+        end
+        
+        # USD
+        unless body[:USD].size == 12
+            changed = "USD tags has changed"    
+        end
+        
+        # EUR
+        unless body[:EUR].size == 11
+            changed = "EUR tags has changed"    
+        end
+        
+        # COL
+        unless body[:COL].size == 4
+            changed = "COL tags has changed"    
+        end
+        
+        # GOLD
+        unless body[:GOLD].size == 1
+            changed = "GOLD tags has changed"    
+        end
+        
+        # USDVEF
+        unless body[:USDVEF].size == 1
+            changed = "USDVEF tags has changed"    
+        end
+        
+        # USDCOL
+        unless body[:USDCOL].size == 7
+            changed = "USDCOL tags has changed"    
+        end
+        
+        # EURUSD
+        unless body[:EURUSD].size == 1
+            changed = "EURUSD tags has changed"    
+        end
+        
+        # BCV
+        unless body[:BCV].size == 4
+            changed = "BCV tags has changed"    
+        end
+        
+        # MISC
+        unless body[:MISC].size == 2
+            changed = "MISC tags has changed"    
+        end
+
+        return changed
+    end   
+ 
+    #gime timestamp
     def hash_timestamp
         uri = URI('http://api.bitcoinvenezuela.com/DolarToday.php?json=yes')
         res = Net::HTTP.get_response(uri)
@@ -428,16 +512,13 @@ class DolarTodayApi
     end
     
     # reservas
-     def MISC_reservas
+    def MISC_reservas
         uri = URI('http://api.bitcoinvenezuela.com/DolarToday.php?json=yes')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
         value = body[:MISC][:reservas]
         return value.to_f
     end
- 
- 
- 
  
  
 end
