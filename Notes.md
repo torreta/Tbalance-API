@@ -48,7 +48,9 @@ paginas de ayuda y apis externas:
 https://www.venezuelaecon.com/
 https://github.com/btcven/api
 http://api.bitcoinvenezuela.com/DolarToday.php?json=yes
+http://api.bitcoinvenezuela.com/historical/
 
+make class and design
 
 
 some used:
