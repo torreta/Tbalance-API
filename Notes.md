@@ -88,7 +88,7 @@ marcador inflacion: boolean
 currency_value:
  currency_id: integer reference: currency 
  sample_date: date 
- valueVs: decimal 
+ toBuy: decimal 
  VsCurrency_id: integer reference: currency
  source:source_id
  
@@ -168,3 +168,5 @@ i.e. Luck = 1/Luck statistic
 
 
 break day, i guess, part2, 3... ups
+
+

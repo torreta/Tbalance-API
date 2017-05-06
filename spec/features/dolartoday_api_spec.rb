@@ -79,7 +79,7 @@ describe DolarTodayApi do
     
     it "USD_sicad1 present" do
       server = DolarTodayApi.new()
-      expect(server.USD_sicad1.is_a?(Float)).to be true
+      expect(server.USD_sicad1.is_a?(Float)).to be true or expect(server.USD_sicad1).to be eq(0)
     end
     
     it "USD_sicad2 present" do
@@ -88,8 +88,8 @@ describe DolarTodayApi do
     end
     
     it "USD_bitcoin_ref present" do
-      server = DolarTodayApi.new()
-      expect(server.USD_bitcoin_ref.is_a?(Float)).to be true
+      server = DolarTodayApi.new() 
+      expect(server.USD_bitcoin_ref.is_a?(Float)).to be true or expect(server.USD_bitcoin_ref).to be eq(0)
     end
     
     it "USD_dolartoday present" do
@@ -140,7 +140,7 @@ describe DolarTodayApi do
     
     it "EUR_sicad1 present" do
       server = DolarTodayApi.new()
-      expect(server.EUR_sicad1.is_a?(Float)).to be true
+      expect(server.EUR_sicad1.is_a?(Float)).to be true or expect(server.EUR_sicad1).to be eq(0)
     end
     
     it "EUR_sicad2 present" do

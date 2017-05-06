@@ -54,7 +54,7 @@ class DolarTodayApi
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
         
-        # 6 mayor tags: _antibloqueo, _labels, _timestamp, USD, EUR, COL, GOLD, USDVEF, USDCOL, EURUSD, BCV, MISC
+        # 12 mayor tags: _antibloqueo, _labels, _timestamp, USD, EUR, COL, GOLD, USDVEF, USDCOL, EURUSD, BCV, MISC
         unless body.size == 12
             changed = "One on the mayor tags has changed"    
         end        

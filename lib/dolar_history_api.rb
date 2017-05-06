@@ -38,9 +38,29 @@ class DolarHistoryApi
         return eval(body).is_a?(Hash)
     end   
 
+    # Hash
+    def get_hash
+        uri = URI('http://api.bitcoinvenezuela.com/historical/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        return body
+    end
+ 
+    # I start assuming that the the API info hasnt changed
+    # and if something has changed i which one.
+    def changed?
+        changed = "false" 
+        uri = URI('http://api.bitcoinvenezuela.com/historical/')
+        res = Net::HTTP.get_response(uri)
+        body = eval(res.body)
+        
+        # 14 mayor tags: USD_BTC, VEF_BTC, USD_LTC, VEF_LTC, BTC_LTC, EUR_BTC, ARS_BTC, EUR_LTC, ARS_LTC, USD_MSC, EUR_MSC, VEF_MSC, ARS_MSC, BTC_MSC 
+        unless body.size == 14
+            changed = "One on the mayor tags has changed"    
+        end        
 
-
-
+        return changed
+    end   
 
 
 end
