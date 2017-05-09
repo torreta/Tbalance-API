@@ -167,6 +167,10 @@ Luck = mean(expected shares per round / actual shares per round)
 i.e. Luck = 1/Luck statistic
 
 
-break day, i guess, part2, 3... ups
+tools? (must eval)
 
-break 4. 3 221
+https://www.onlinecharttool.com/graph
+http://www.chartjs.org/
+https://thenextweb.com/dd/2015/06/12/20-best-javascript-chart-libraries/
+http://gionkunz.github.io/chartist-js/
+http://www.fusioncharts.com/
