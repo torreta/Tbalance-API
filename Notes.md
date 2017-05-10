@@ -174,3 +174,5 @@ http://www.chartjs.org/
 https://thenextweb.com/dd/2015/06/12/20-best-javascript-chart-libraries/
 http://gionkunz.github.io/chartist-js/
 http://www.fusioncharts.com/
+
+kinda out of ideas tonight, so... just make a class or a vagrant file?
