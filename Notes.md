@@ -77,28 +77,34 @@ changeVSlast: decimal
 currencies:
  name: string 
  simbol:string 
- alias:string 
  history_id: integer reference: currency_value_id
  type_id #eggs, milk or dolar / informal, formal.
+
+rails g model Currency name:string simbol:string  type_id:integer
 
 currency_type:
 name:strig //formal, informal etc
 marcador inflacion: boolean
+
+rails g model CurrencyType name:string inflation:boolean
 
 currency_value:
  currency_id: integer reference: currency 
  sample_date: date 
  toBuy: decimal 
  VsCurrency_id: integer reference: currency
- source:source_id
+ source_id: integer  reference: Source
  
 source:
  name: string // API, Calculation, exchange_rate, etc
+
+rails g model Source name:string
 
 currencies_alias:
 alias: string
 currency_id: integer reference: currency 
 
+rails g model CurrencyAlias name:string currency_id:integer references :currency 
 
 
 transaccion_ description currency_id: reference category_id: integer XtimesSalary_ decimal
