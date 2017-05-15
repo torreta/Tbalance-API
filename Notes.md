@@ -182,3 +182,7 @@ http://gionkunz.github.io/chartist-js/
 http://www.fusioncharts.com/
 
 kinda out of ideas tonight, so... just make a class or a vagrant file?
+
+command:
+
+rake db:drop; rake db:create; rake db:migrate; rake db:seed;
