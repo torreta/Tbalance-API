@@ -1,6 +1,8 @@
 class SourceController < ApplicationController
   
-  def get
-    return false
+  def index
+    @sources = Source.all
+    render json:  @sources
   end
+  
 end

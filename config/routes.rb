@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'source/get'
+  get 'source/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -57,5 +57,5 @@ Rails.application.routes.draw do
   #   end
   
   
-     resources :sources
+    # resources :sources
 end
