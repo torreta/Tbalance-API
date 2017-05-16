@@ -1,4 +1,6 @@
 class SourceController < ApplicationController
-  def name:string
+  
+  def get
+    return false
   end
 end

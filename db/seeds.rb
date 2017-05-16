@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+ sources = Source.create([
+                            { name: 'API' }, 
+                            { name: 'Calculation' },  
+                            { name: 'System' },  
+                            { name: 'Inserted' }
+                        ])
+                        
