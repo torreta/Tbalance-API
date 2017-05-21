@@ -188,3 +188,5 @@ command:
 rake db:drop; rake db:create; rake db:migrate; rake db:seed;
 
 tesis break part 2
+
+hold it, baby shower
