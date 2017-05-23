@@ -190,3 +190,5 @@ rake db:drop; rake db:create; rake db:migrate; rake db:seed;
 tesis break part 2
 
 hold it, baby shower
+
+should really. really do thesis right now...
