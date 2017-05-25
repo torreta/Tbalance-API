@@ -187,8 +187,11 @@ command:
 
 rake db:drop; rake db:create; rake db:migrate; rake db:seed;
 
-tesis break part 2
+go and see react.js forums for the frontend development,
+since now we should produce diagrams to have a better visualization 
+of what i should be doing... 
 
-hold it, baby shower
+look for graphications tools for react-native, since the app
+is going to be made there. 
 
-should really. really do thesis right now...
+rspec for model validation, controller somehow isnt working properly
