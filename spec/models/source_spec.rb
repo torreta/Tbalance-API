@@ -1,5 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Source, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  it "is not valid without a name"
+  
+  it "is valid with all its requiered attributes"
+  
 end
