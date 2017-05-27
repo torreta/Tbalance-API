@@ -193,5 +193,3 @@ of what i should be doing...
 
 look for graphications tools for react-native, since the app
 is going to be made there. 
-
-rspec for model validation, controller somehow isnt working properly
