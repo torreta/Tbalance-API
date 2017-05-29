@@ -197,3 +197,8 @@ is going to be made there.
 check some bitcoin tools.
 
 Hashflare
+
+Get some wallets
+
+Understand Ether coin
+

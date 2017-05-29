@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Source, type: :model do
-
-  it "is not valid without a name"
   
-  it "is valid with all its requiered attributes"
-  
+    # Validation test
+    # ensure column name is present before saving
+    it { should validate_presence_of(:name) }
+    
 end
