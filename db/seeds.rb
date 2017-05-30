@@ -12,6 +12,6 @@
                             { name: 'bitcoinvenezuela' },  
                             { name: 'System' },  
                             { name: 'Other' },  
-                            { name: 'Inserted' },
+                            { name: 'Inserted' }
                         ])
                         
