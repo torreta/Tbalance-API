@@ -7,9 +7,11 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
  sources = Source.create([
-                            { name: 'API' }, 
-                            { name: 'Calculation' },  
+                            { name: 'DolarToday' }, 
+                            { name: 'Btcven' }, 
+                            { name: 'bitcoinvenezuela' },  
                             { name: 'System' },  
-                            { name: 'Inserted' }
+                            { name: 'Other' },  
+                            { name: 'Inserted' },
                         ])
                         
