@@ -135,13 +135,13 @@ describe BitcoinVenezuelaApi do
     end
     
 
-    it "data is being inserted correctly"
+    # it "data is being inserted correctly"
 
-    it "worker is active"
+    # it "worker is active"
     
-    it "value is float"
+    # it "value is float"
     
-    it "description vs is correct"    
+    # it "description vs is correct"    
     
 end
 
