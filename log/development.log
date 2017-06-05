@@ -1,0 +1,121 @@
+  [1m[36m (14.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (21.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTodos (20170328031109)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "todos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_by" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170328031109"]]
+  [1m[35m (33.0ms)[0m  commit transaction
+Migrating to CreateItems (20170328031255)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "done" boolean, "todo_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_items_on_todo_id" ON "items" ("todo_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170328031255"]]
+  [1m[36m (20.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSources (20170511021708)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "sources" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170511021708"]]
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCurrencyTypes (20170605033219)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "currency_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "marker" boolean DEFAULT 't', "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170605033219"]]
+  [1m[36m (11.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_items_on_todo_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_items_on_todo_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sources" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "DolarToday"], ["created_at", "2017-06-05 03:42:33.926894"], ["updated_at", "2017-06-05 03:42:33.926894"]]
+  [1m[35m (30.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "sources" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Btcven"], ["created_at", "2017-06-05 03:42:33.964239"], ["updated_at", "2017-06-05 03:42:33.964239"]]
+  [1m[36m (25.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "sources" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "bitcoinvenezuela"], ["created_at", "2017-06-05 03:42:33.992504"], ["updated_at", "2017-06-05 03:42:33.992504"]]
+  [1m[35m (25.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "sources" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "System"], ["created_at", "2017-06-05 03:42:34.020789"], ["updated_at", "2017-06-05 03:42:34.020789"]]
+  [1m[36m (19.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "sources" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Other"], ["created_at", "2017-06-05 03:42:34.042905"], ["updated_at", "2017-06-05 03:42:34.042905"]]
+  [1m[35m (12.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "sources" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Inserted"], ["created_at", "2017-06-05 03:42:34.057218"], ["updated_at", "2017-06-05 03:42:34.057218"]]
+  [1m[36m (21.2ms)[0m  [1mcommit transaction[0m
+  [1m[36m (11.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (7.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTodos (20170328031109)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "todos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_by" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170328031109"]]
+  [1m[35m (9.6ms)[0m  commit transaction
+Migrating to CreateItems (20170328031255)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "done" boolean, "todo_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_items_on_todo_id" ON "items" ("todo_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170328031255"]]
+  [1m[36m (9.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSources (20170511021708)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "sources" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170511021708"]]
+  [1m[36m (9.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCurrencyTypes (20170605033219)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "currency_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "marker" boolean DEFAULT 't', "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170605033219"]]
+  [1m[36m (10.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_items_on_todo_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_items_on_todo_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sources" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "DolarToday"], ["created_at", "2017-06-05 03:43:34.055328"], ["updated_at", "2017-06-05 03:43:34.055328"]]
+  [1m[35m (9.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "sources" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Btcven"], ["created_at", "2017-06-05 03:43:34.069568"], ["updated_at", "2017-06-05 03:43:34.069568"]]
+  [1m[36m (7.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "sources" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "bitcoinvenezuela"], ["created_at", "2017-06-05 03:43:34.078981"], ["updated_at", "2017-06-05 03:43:34.078981"]]
+  [1m[35m (7.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "sources" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "System"], ["created_at", "2017-06-05 03:43:34.088201"], ["updated_at", "2017-06-05 03:43:34.088201"]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "sources" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Other"], ["created_at", "2017-06-05 03:43:34.098498"], ["updated_at", "2017-06-05 03:43:34.098498"]]
+  [1m[35m (7.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "sources" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Inserted"], ["created_at", "2017-06-05 03:43:34.107341"], ["updated_at", "2017-06-05 03:43:34.107341"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "currency_types" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "digital"], ["created_at", "2017-06-05 03:43:34.124252"], ["updated_at", "2017-06-05 03:43:34.124252"]]
+  [1m[35m (9.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "currency_types" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "formal"], ["created_at", "2017-06-05 03:43:34.136151"], ["updated_at", "2017-06-05 03:43:34.136151"]]
+  [1m[36m (9.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "currency_types" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "cryptocurrency"], ["created_at", "2017-06-05 03:43:34.147571"], ["updated_at", "2017-06-05 03:43:34.147571"]]
+  [1m[35m (10.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "currency_types" ("name", "marker", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "observable inflation"], ["marker", "f"], ["created_at", "2017-06-05 03:43:34.159687"], ["updated_at", "2017-06-05 03:43:34.159687"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "currency_types" ("name", "marker", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "transaction"], ["marker", "f"], ["created_at", "2017-06-05 03:43:34.170161"], ["updated_at", "2017-06-05 03:43:34.170161"]]
+  [1m[35m (6.6ms)[0m  commit transaction
