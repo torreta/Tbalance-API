@@ -86,7 +86,7 @@ currency_type:
 name:strig //formal, informal etc
 marcador inflacion: boolean
 
-rails g model CurrencyType name:string inflation:boolean
+rails g model CurrencyType name:string marker:boolean
 
 currency_value:
  currency_id: integer reference: currency 
@@ -95,10 +95,6 @@ currency_value:
  VsCurrency_id: integer reference: currency
  source_id: integer  reference: Source
  
-source:
- name: string // API, Calculation, exchange_rate, etc
-
-rails g model Source name:string
 
 currencies_alias:
 alias: string
@@ -203,3 +199,18 @@ Get some wallets
 Understand Ether coin
 
 tesis break?
+
+
+<!-------------------------------------------------------------->
+already made tables
+
+source:
+ name: string // API, Calculation, exchange_rate, etc
+
+rails g model Source name:string
+
+
+rails g model CurrencyType name:string marker:boolean
+
+
+
