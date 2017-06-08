@@ -214,3 +214,4 @@ rails g model CurrencyType name:string marker:boolean
 
 
 
+marker of hashflare
