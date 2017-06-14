@@ -217,3 +217,5 @@ rails g model CurrencyType name:string marker:boolean
 marker of hashflare
 
 http://mundoptc.com.ve/tema-Minar-ethereum-desde-0-latino-America-2016
+
+Ether coin.
