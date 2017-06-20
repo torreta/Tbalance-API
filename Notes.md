@@ -223,3 +223,5 @@ Ether coin.
 about to buy from andres 70 cash
 
 already gave the money, now the time is right
+
+genesis and hashflare.
