@@ -229,3 +229,5 @@ genesis and hashflare.
 stressfull day
 
 facturas daniela
+
+made all better i guess
