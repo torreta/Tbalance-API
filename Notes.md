@@ -226,8 +226,10 @@ already gave the money, now the time is right
 
 genesis and hashflare.
 
-stressfull day
 
-facturas daniela
+tables:
 
-made all better i guess
+Bancos
+
+Cuentas
+
