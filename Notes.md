@@ -233,3 +233,9 @@ Bancos
 
 Cuentas
 
+tipo de cuenta
+
+sede?
+
+ofuscar cuenta funcion
+
