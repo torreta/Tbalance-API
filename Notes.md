@@ -239,3 +239,4 @@ sede?
 
 ofuscar cuenta funcion
 
+valeria se enfermo y me dio dias de libre
