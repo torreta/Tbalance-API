@@ -237,6 +237,6 @@ tipo de cuenta
 
 sede?
 
-ofuscar cuenta funcion
+ofuscar cuenta funcion (ofusca parcialmente un numero de cuenta)
 
 valeria se enfermo y me dio dias de libre
