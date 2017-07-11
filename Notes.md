@@ -239,4 +239,12 @@ sede?
 
 ofuscar cuenta funcion (ofusca parcialmente un numero de cuenta)
 
-valeria se enfermo y me dio dias de libre
+sacado el calculo inversion bitcoin, 
+
+13/05/2018	dia en que empieza a auto sostenerse.
+216,00     inversion interna
+1800       GH/s
+1,2        ganancia diaria
+1 dia en incrementar 40 dias de halt y recupero... y sigo
+
+escala
