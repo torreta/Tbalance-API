@@ -248,3 +248,6 @@ sacado el calculo inversion bitcoin,
 1 dia en incrementar 40 dias de halt y recupero... y sigo
 
 escala
+
+
+seems like hashflare, yes. it made a difference, 330 gh/s
