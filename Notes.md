@@ -253,3 +253,5 @@ escala
 seems like hashflare, yes. it made a difference, 330 gh/s
 
 thesis time tonight, leaving that aside, log saving for today
+
+no thesis but, doing at best a lot of things
