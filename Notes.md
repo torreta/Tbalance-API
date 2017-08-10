@@ -259,3 +259,5 @@ no thesis but, doing at best a lot of things
 TEamviewer + bluestack combo
 
 c9.io to test
+
+nota nula, danimados pagina
