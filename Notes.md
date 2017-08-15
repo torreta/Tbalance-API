@@ -247,6 +247,8 @@ sacado el calculo inversion bitcoin,
 1,2        ganancia diaria
 1 dia en incrementar 40 dias de halt y recupero... y sigo
 
+ROI in about 7 months
+
 escala
 
 
@@ -256,7 +258,7 @@ thesis time tonight, leaving that aside, log saving for today
 
 no thesis but, doing at best a lot of things
 
-TEamviewer + bluestack combo
+TEamviewer + bluestack combo always helpfull
 
 c9.io to test
 
