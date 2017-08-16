@@ -263,3 +263,6 @@ TEamviewer + bluestack combo always helpfull
 c9.io to test
 
 nota nula, danimados pagina
+
+got to learn filters and validators for rails.
+http://guides.rubyonrails.org/action_controller_overview.html
