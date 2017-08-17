@@ -266,3 +266,8 @@ nota nula, danimados pagina
 
 got to learn filters and validators for rails.
 http://guides.rubyonrails.org/action_controller_overview.html
+
+make a table for special dates than marks tendencies and events wto have
+them added on the graphics to analice behavior
+
+example: bitcoin bifurcation, constituyente, black friday.
