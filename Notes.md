@@ -271,3 +271,7 @@ make a table for special dates than marks tendencies and events wto have
 them added on the graphics to analice behavior
 
 example: bitcoin bifurcation, constituyente, black friday.
+
+xenobitas? 
+
+i really need discipline and concious practice
