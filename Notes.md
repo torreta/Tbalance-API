@@ -212,19 +212,7 @@ rails g model Source name:string
 
 rails g model CurrencyType name:string marker:boolean
 
-
-
-marker of hashflare
-
 http://mundoptc.com.ve/tema-Minar-ethereum-desde-0-latino-America-2016
-
-Ether coin.
-
-about to buy from andres 70 cash
-
-already gave the money, now the time is right
-
-genesis and hashflare.
 
 
 tables:
@@ -234,8 +222,6 @@ Bancos
 Cuentas
 
 tipo de cuenta
-
-sede?
 
 ofuscar cuenta funcion (ofusca parcialmente un numero de cuenta)
 
@@ -249,9 +235,6 @@ sacado el calculo inversion bitcoin,
 
 ROI in about 7 months
 
-escala
-
-
 seems like hashflare, yes. it made a difference, 330 gh/s
 
 thesis time tonight, leaving that aside, log saving for today
@@ -262,8 +245,6 @@ TEamviewer + bluestack combo always helpfull
 
 c9.io to test
 
-nota nula, danimados pagina
-
 got to learn filters and validators for rails.
 http://guides.rubyonrails.org/action_controller_overview.html
 
@@ -272,6 +253,5 @@ them added on the graphics to analice behavior
 
 example: bitcoin bifurcation, constituyente, black friday.
 
-xenobitas? 
-
 i really need discipline and concious practice
+
