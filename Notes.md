@@ -257,3 +257,6 @@ i really need discipline and concious practice
 
 maybe i should use hashflare libraries on graphication?
 
+arepa time!
+
+TDD: for all. remember
