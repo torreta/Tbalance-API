@@ -260,3 +260,7 @@ maybe i should use hashflare libraries on graphication?
 arepa time!
 
 TDD: for all. remember
+
+
+450 g/hs 175$
+
