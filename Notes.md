@@ -264,3 +264,6 @@ TDD: for all. remember
 
 450 g/hs 175$
 
+class project and transations associated with it. or persons
+so you know if they are profitable or just a sinkhole.
+
