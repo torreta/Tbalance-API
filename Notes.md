@@ -266,4 +266,5 @@ TDD: for all. remember
 
 class project and transations associated with it. or persons
 so you know if they are profitable or just a sinkhole.
+(u can see them as investments or transation groups)
 
