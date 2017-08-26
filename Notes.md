@@ -268,3 +268,5 @@ class project and transations associated with it. or persons
 so you know if they are profitable or just a sinkhole.
 (u can see them as investments or transation groups)
 
+apart from transaction type, put something like organization on transaction
+so you know what kind of transation was and in what kind of pool of investment it is
