@@ -271,3 +271,8 @@ so you know if they are profitable or just a sinkhole.
 apart from transaction type, put something like organization on transaction
 so you know what kind of transation was and in what kind of pool of investment it is
 
+need a way to classifi transactions like a folder
+
+persons and identities to save so you know to whom the transactions are being made.
+
+just some ideas... so, bear with me...
