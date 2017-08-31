@@ -177,9 +177,10 @@ https://thenextweb.com/dd/2015/06/12/20-best-javascript-chart-libraries/
 http://gionkunz.github.io/chartist-js/
 http://www.fusioncharts.com/
 
-kinda out of ideas tonight, so... just make a class or a vagrant file?
+made a Vagrant file if you dont know what that is, visit:
+https://www.vagrantup.com/
 
-command:
+command: (pretty much full reset of all db)
 
 rake db:drop; rake db:create; rake db:migrate; rake db:seed;
 
@@ -192,13 +193,7 @@ is going to be made there.
 
 check some bitcoin tools.
 
-Hashflare
-
-Get some wallets
-
-Understand Ether coin
-
-tesis break?
+Hashflare, as reference for finantial panel (the idea of requisition)
 
 
 <!-------------------------------------------------------------->
@@ -208,7 +203,6 @@ source:
  name: string // API, Calculation, exchange_rate, etc
 
 rails g model Source name:string
-
 
 rails g model CurrencyType name:string marker:boolean
 
@@ -223,7 +217,7 @@ Cuentas
 
 tipo de cuenta
 
-ofuscar cuenta funcion (ofusca parcialmente un numero de cuenta)
+(idea) ofuscar cuenta funcion (ofusca parcialmente un numero de cuenta)
 
 sacado el calculo inversion bitcoin, 
 
@@ -257,8 +251,6 @@ i really need discipline and concious practice
 
 maybe i should use hashflare libraries on graphication?
 
-arepa time!
-
 TDD: for all. remember
 
 
@@ -275,4 +267,4 @@ need a way to classifi transactions like a folder
 
 persons and identities to save so you know to whom the transactions are being made.
 
-just some ideas... so, bear with me...
+
