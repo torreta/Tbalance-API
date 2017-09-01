@@ -254,7 +254,7 @@ maybe i should use hashflare libraries on graphication?
 TDD: for all. remember
 
 
-450 g/hs 175$
+450 g/hs 175$ - planes somehow bashed thanks to the rising of the tax on sha-32
 
 class project and transations associated with it. or persons
 so you know if they are profitable or just a sinkhole.
