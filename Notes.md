@@ -268,3 +268,9 @@ need a way to classifi transactions like a folder
 persons and identities to save so you know to whom the transactions are being made.
 
 its about some udemy courses...
+
+airbit?
+
+renew excel about the btc investment.
+
+
