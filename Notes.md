@@ -277,4 +277,6 @@ check the psysical notes about the database structure.
 
 airbit isnt that good as an investment, you could make better.
 
+pain is temporary. glory is ethernal
+
 
