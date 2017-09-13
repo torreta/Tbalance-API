@@ -281,3 +281,6 @@ pain is temporary. glory is ethernal
 
 
 kong--- and contagion
+
+kidding myself on codingaming...
+
