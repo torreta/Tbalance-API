@@ -281,4 +281,4 @@ pain is temporary. glory is ethernal
 
 new stuff, banesco stuff
 
-terraforming and props
+airtm for money changes and listview on react
