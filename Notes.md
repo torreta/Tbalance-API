@@ -282,3 +282,5 @@ pain is temporary. glory is ethernal
 new stuff, banesco stuff
 
 airtm for money changes and listview on react
+
+more investment hashflare.
