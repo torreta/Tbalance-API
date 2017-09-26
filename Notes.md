@@ -285,6 +285,4 @@ airtm for money changes and listview on react
 
 more investment hashflare.
 
-que imaginas
-
-meh
+bit... coin?
