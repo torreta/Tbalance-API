@@ -253,7 +253,6 @@ maybe i should use hashflare libraries on graphication?
 
 TDD: for all. remember
 
-
 450 g/hs 175$ - planes somehow bashed thanks to the rising of the tax on sha-32
 
 class project and transations associated with it. or persons
@@ -263,28 +262,10 @@ so you know if they are profitable or just a sinkhole.
 apart from transaction type, put something like organization on transaction
 so you know what kind of transation was and in what kind of pool of investment it is
 
-need a way to classifi transactions like a folder
+need a way to classify transactions like a folder
 
 persons and identities to save so you know to whom the transactions are being made.
 
-its about some udemy courses...
-
-airbit?
-
-renew excel about the btc investment.
-
 check the psysical notes about the database structure.
 
-airbit isnt that good as an investment, you could make better.
-
 pain is temporary. glory is ethernal
-
-new stuff, banesco stuff
-
-airtm for money changes and listview on react
-
-more investment hashflare.
-
-bit... coin?
-
-monero all the way
