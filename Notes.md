@@ -269,3 +269,5 @@ persons and identities to save so you know to whom the transactions are being ma
 check the psysical notes about the database structure.
 
 pain is temporary. glory is ethernal
+
+http://whattomine.com
