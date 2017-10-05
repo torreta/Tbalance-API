@@ -271,3 +271,5 @@ check the psysical notes about the database structure.
 pain is temporary. glory is ethernal
 
 http://whattomine.com
+
+people watching on youtube
