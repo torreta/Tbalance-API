@@ -272,8 +272,4 @@ pain is temporary. glory is ethernal
 
 http://whattomine.com
 
-people watching on youtube
-
-sinking on a bladerunner euphoria
-
-cuphead maddness
+try to get transactions to be able to asociate
