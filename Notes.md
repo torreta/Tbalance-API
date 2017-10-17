@@ -274,4 +274,4 @@ http://whattomine.com
 
 try to get transactions to be able to asociate
 
-awww, dang
+be more than...
