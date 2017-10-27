@@ -281,3 +281,5 @@ some recognition would be good
 cne a seniat api
 
 almost there 
+
+Watch maps of meaning and selfAuthoring
