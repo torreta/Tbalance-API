@@ -283,3 +283,5 @@ cne a seniat api
 almost there 
 
 Watch maps of meaning and selfAuthoring
+
+archipielago de gularg, read
