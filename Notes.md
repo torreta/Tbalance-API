@@ -285,3 +285,5 @@ almost there
 Watch maps of meaning and selfAuthoring
 
 archipielago de gularg, read
+
+jordan petersen
