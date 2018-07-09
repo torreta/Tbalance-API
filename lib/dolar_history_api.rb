@@ -7,7 +7,7 @@ class DolarHistoryApi
     # http://stackoverflow.com/questions/21081639/ping-for-reachability-of-remote-host-in-ruby
     
     # API to check:
-    # http://api.bitcoinvenezuela.com/historical/
+    # https://api.bitcoinvenezuela.com/historical/
     
         # checking if our server has internet connection 
     def internet?
@@ -25,14 +25,14 @@ class DolarHistoryApi
     
     # checking if the API is active, read below...
     def active_api?
-        uri = URI('http://api.bitcoinvenezuela.com/historical/')
+        uri = URI('https://api.bitcoinvenezuela.com/historical/')
         res = Net::HTTP.get_response(uri)
         return res.is_a?(Net::HTTPSuccess) 
     end
     
     # data can be parsed?
     def parseable?
-        uri = URI('http://api.bitcoinvenezuela.com/historical/')
+        uri = URI('https://api.bitcoinvenezuela.com/historical/')
         res = Net::HTTP.get_response(uri)
         body = res.body
         return eval(body).is_a?(Hash)
@@ -40,7 +40,7 @@ class DolarHistoryApi
 
     # Hash
     def get_hash
-        uri = URI('http://api.bitcoinvenezuela.com/historical/')
+        uri = URI('https://api.bitcoinvenezuela.com/historical/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
         return body
@@ -50,7 +50,7 @@ class DolarHistoryApi
     # and if something has changed i which one.
     def changed?
         changed = "false" 
-        uri = URI('http://api.bitcoinvenezuela.com/historical/')
+        uri = URI('https://api.bitcoinvenezuela.com/historical/')
         res = Net::HTTP.get_response(uri)
         body = eval(res.body)
         
