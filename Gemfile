@@ -38,8 +38,6 @@ gem 'net-ping', '~> 2.0', '>= 2.0.1'
 # gem 'capistrano-rails', group: :development
 
 
-
-
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -48,7 +46,8 @@ group :development, :test do
 end
 
 group :test do
-  gem 'factory_girl_rails', '~> 4.0'
+  gem "factory_bot_rails"
+  gem "factory_bot"
   gem 'shoulda-matchers', '~> 3.1'
   gem 'faker'
   gem 'database_cleaner'
