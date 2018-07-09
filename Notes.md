@@ -287,3 +287,7 @@ Watch maps of meaning and selfAuthoring
 archipielago de gularg, read
 
 jordan petersen
+
+
+<!----> FIX THE SSL ERROR HERE ON APP
+https://stackoverflow.com/questions/4528101/ssl-connect-returned-1-errno-0-state-sslv3-read-server-certificate-b-certificat
